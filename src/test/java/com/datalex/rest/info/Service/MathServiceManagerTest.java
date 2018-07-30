@@ -32,7 +32,6 @@ public class MathServiceManagerTest {
         mathDto.setSecondNumber(new BigDecimal(2));
         mathServiceManager.createMath(mathDto);
         assertThat(mathDto.getResult().compareTo(new BigDecimal(3)), equalTo(0));
-        assertThat(mathDto.getId(), equalTo(0));
     }
 
 
