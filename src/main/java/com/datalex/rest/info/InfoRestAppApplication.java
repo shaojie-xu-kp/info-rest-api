@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class MathAppApplication {
+public class InfoRestAppApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(MathAppApplication.class, args);
+		SpringApplication.run(InfoRestAppApplication.class, args);
 	}
 }
