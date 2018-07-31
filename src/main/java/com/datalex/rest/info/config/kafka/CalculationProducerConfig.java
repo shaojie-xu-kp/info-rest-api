@@ -1,4 +1,4 @@
-package com.datalex.rest.info.config;
+package com.datalex.rest.info.config.kafka;
 
 
 import com.datalex.rest.info.model.MathDto;

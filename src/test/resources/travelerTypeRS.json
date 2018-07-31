@@ -1,0 +1,490 @@
+{
+  "userSessionId": "5b60377126c7215fc940a44d",
+  "pos": "JETBLUEGETAWAYS_US",
+  "languageCode": "en",
+  "expiration": {
+    "date": "2018-07-31T10:33:25Z",
+    "duration": "PT14M59.067S"
+  },
+  "error": [],
+  "warning": [
+    {
+      "type": "SERVICE",
+      "code": "LANGUAGE_SUBSTITUTION",
+      "description": "Language was substituted for en"
+    }
+  ],
+  "types": {
+    "uri": "/info/traveler-types",
+    "maxCount": 100,
+    "totalCount": 16,
+    "startIndex": 0,
+    "pageSize": 16,
+    "type": [
+      {
+        "uri": "/info/traveler-types/ACTIVITYTOUR/10.AQC",
+        "id": "10.AQC",
+        "code": "10.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/ADULT",
+          "id": "ADULT"
+        },
+        "ageRange": {
+          "from": 12,
+          "to": 110,
+          "default": 45
+        },
+        "agePromt": "DISABLE_PROMPT",
+        "description": [
+          {
+            "language": "en",
+            "name": "10.AQC",
+            "shortDescription": "Adult",
+            "longDescription": "Adult 12-63"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 7,
+          "default": 1
+        }
+      },
+      {
+        "uri": "/info/traveler-types/ACTIVITYTOUR/8.AQC",
+        "id": "8.AQC",
+        "code": "8.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/CHILD",
+          "id": "CHILD"
+        },
+        "ageRange": {
+          "from": 2,
+          "to": 11,
+          "default": 8
+        },
+        "agePromt": "DISABLE_PROMPT",
+        "description": [
+          {
+            "language": "en",
+            "name": "8.AQC",
+            "shortDescription": "Child",
+            "longDescription": "Child 2-11"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 7,
+          "default": 1
+        }
+      },
+      {
+        "uri": "/info/traveler-types/ACTIVITYTOUR/7.AQC",
+        "id": "7.AQC",
+        "code": "7.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/INFANT_LAP",
+          "id": "INFANT_LAP"
+        },
+        "ageRange": {
+          "from": 0,
+          "to": 1,
+          "default": 0
+        },
+        "agePromt": "DISABLE_PROMPT",
+        "description": [
+          {
+            "language": "en",
+            "name": "7.AQC",
+            "shortDescription": "Infant",
+            "longDescription": "Infant (0-1 yrs)"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 7,
+          "default": 1
+        }
+      },
+      {
+        "uri": "/info/traveler-types/INSURANCE/11.AQC",
+        "id": "11.AQC",
+        "code": "11.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/SENIOR",
+          "id": "SENIOR"
+        },
+        "ageRange": {
+          "from": 64,
+          "to": 200,
+          "default": 64
+        },
+        "agePromt": "PROMPT_FOR_DOB",
+        "description": [
+          {
+            "language": "en",
+            "name": "11.AQC",
+            "shortDescription": "Adult 64 and Over",
+            "longDescription": "Adult 64 and Over"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 9,
+          "default": 0
+        }
+      },
+      {
+        "uri": "/info/traveler-types/INSURANCE/12.AQC",
+        "id": "12.AQC",
+        "code": "12.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/UNACCOMPANIED_CHILD",
+          "id": "UNACCOMPANIED_CHILD"
+        },
+        "ageRange": {
+          "from": 5,
+          "to": 17,
+          "default": 5
+        },
+        "agePromt": "PROMPT_FOR_DOB",
+        "description": [
+          {
+            "language": "en",
+            "name": "12.AQC",
+            "shortDescription": "Unaccompanied Minor",
+            "longDescription": "Unaccompanied Minor"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 3,
+          "default": 0
+        }
+      },
+      {
+        "uri": "/info/traveler-types/INSURANCE/10.AQC",
+        "id": "10.AQC",
+        "code": "10.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/ADULT",
+          "id": "ADULT"
+        },
+        "ageRange": {
+          "from": 12,
+          "to": 64,
+          "default": 40
+        },
+        "agePromt": "PROMPT_FOR_DOB",
+        "description": [
+          {
+            "language": "en",
+            "name": "10.AQC",
+            "shortDescription": "Adult",
+            "longDescription": "Adult (12-63 yrs)"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 9,
+          "default": 1
+        }
+      },
+      {
+        "uri": "/info/traveler-types/INSURANCE/8.AQC",
+        "id": "8.AQC",
+        "code": "8.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/CHILD",
+          "id": "CHILD"
+        },
+        "ageRange": {
+          "from": 2,
+          "to": 11,
+          "default": 2
+        },
+        "agePromt": "PROMPT_FOR_DOB",
+        "description": [
+          {
+            "language": "en",
+            "name": "8.AQC",
+            "shortDescription": "Child",
+            "longDescription": "Child (2-11 yrs)"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 8,
+          "default": 1
+        }
+      },
+      {
+        "uri": "/info/traveler-types/INSURANCE/7.AQC",
+        "id": "7.AQC",
+        "code": "7.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/INFANT_LAP",
+          "id": "INFANT_LAP"
+        },
+        "ageRange": {
+          "from": 0,
+          "to": 1,
+          "default": 0
+        },
+        "agePromt": "PROMPT_FOR_DOB",
+        "description": [
+          {
+            "language": "en",
+            "name": "7.AQC",
+            "shortDescription": "Infant",
+            "longDescription": "Infant (0-1yrs)"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 9,
+          "default": 1
+        }
+      },
+      {
+        "uri": "/info/traveler-types/AIR/ADT",
+        "id": "ADT",
+        "code": "ADT",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/ADULT",
+          "id": "ADULT"
+        },
+        "ageRange": {
+          "from": 12,
+          "to": 110,
+          "default": 35
+        },
+        "agePromt": "DISABLE_PROMPT",
+        "description": [
+          {
+            "language": "en",
+            "name": "ADT",
+            "shortDescription": "Adult",
+            "longDescription": "Adult"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 7,
+          "default": 1
+        }
+      },
+      {
+        "uri": "/info/traveler-types/AIR/CHD",
+        "id": "CHD",
+        "code": "CHD",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/CHILD",
+          "id": "CHILD"
+        },
+        "ageRange": {
+          "from": 0,
+          "to": 14,
+          "default": 9
+        },
+        "agePromt": "DISABLE_PROMPT",
+        "description": [
+          {
+            "language": "en",
+            "name": "CHD",
+            "shortDescription": "Child",
+            "longDescription": "Child (0-14 yrs)"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 7,
+          "default": 0
+        }
+      },
+      {
+        "uri": "/info/traveler-types/AIR/INS",
+        "id": "INS",
+        "code": "INS",
+        "qualified": true,
+        "groupRef": {
+          "uri": "/info/traveler-groups/INFANT_SEAT",
+          "id": "INFANT_SEAT"
+        },
+        "ageRange": {
+          "from": 0,
+          "to": 1,
+          "default": 0
+        },
+        "agePromt": "DISABLE_PROMPT",
+        "description": [
+          {
+            "language": "en",
+            "name": "INS",
+            "shortDescription": "Infant In Seat",
+            "longDescription": "Infant In Seat"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 3,
+          "default": 0
+        }
+      },
+      {
+        "uri": "/info/traveler-types/AIR/INF",
+        "id": "INF",
+        "code": "INF",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/INFANT_LAP",
+          "id": "INFANT_LAP"
+        },
+        "ageRange": {
+          "from": 0,
+          "to": 1,
+          "default": 0
+        },
+        "agePromt": "DISABLE_PROMPT",
+        "description": [
+          {
+            "language": "en",
+            "name": "INF",
+            "shortDescription": "Infant",
+            "longDescription": "Infant (0-1 yrs)"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 3,
+          "default": 0
+        }
+      },
+      {
+        "uri": "/info/traveler-types/LODGING/10.AQC",
+        "id": "10.AQC",
+        "code": "10.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/ADULT",
+          "id": "ADULT"
+        },
+        "ageRange": {
+          "from": 19,
+          "to": 120,
+          "default": 40
+        },
+        "agePromt": "DISABLE_PROMPT",
+        "description": [
+          {
+            "language": "en",
+            "name": "10.AQC",
+            "shortDescription": "Adult",
+            "longDescription": "Adult"
+          }
+        ],
+        "quantity": {
+          "min": 1,
+          "max": 7,
+          "default": 1
+        }
+      },
+      {
+        "uri": "/info/traveler-types/LODGING/8.AQC",
+        "id": "8.AQC",
+        "code": "8.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/CHILD",
+          "id": "CHILD"
+        },
+        "ageRange": {
+          "from": 2,
+          "to": 18,
+          "default": 12
+        },
+        "agePromt": "PROMPT_FOR_AGE",
+        "description": [
+          {
+            "language": "en",
+            "name": "8.AQC",
+            "shortDescription": "Child",
+            "longDescription": "Child (2-12 yrs)"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 6,
+          "default": 0
+        }
+      },
+      {
+        "uri": "/info/traveler-types/LODGING/7.AQC",
+        "id": "7.AQC",
+        "code": "7.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/INFANT_LAP",
+          "id": "INFANT_LAP"
+        },
+        "ageRange": {
+          "from": 0,
+          "to": 1,
+          "default": 0
+        },
+        "agePromt": "DISABLE_PROMPT",
+        "description": [
+          {
+            "language": "en",
+            "name": "7.AQC",
+            "shortDescription": "Infant",
+            "longDescription": "Infant (0-1 yrs)"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 3,
+          "default": 0
+        }
+      },
+      {
+        "uri": "/info/traveler-types/CAR/10.AQC",
+        "id": "10.AQC",
+        "code": "10.AQC",
+        "qualified": false,
+        "groupRef": {
+          "uri": "/info/traveler-groups/ADULT",
+          "id": "ADULT"
+        },
+        "ageRange": {
+          "from": 21,
+          "to": 99,
+          "default": 35
+        },
+        "agePromt": "DISABLE_PROMPT",
+        "description": [
+          {
+            "language": "en",
+            "name": "10.AQC",
+            "shortDescription": "Adult",
+            "longDescription": "Adult"
+          }
+        ],
+        "quantity": {
+          "min": 0,
+          "max": 9,
+          "default": 1
+        }
+      }
+    ]
+  }
+}

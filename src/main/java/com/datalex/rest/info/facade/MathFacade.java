@@ -1,8 +1,8 @@
-package com.datalex.rest.info.service;
+package com.datalex.rest.info.facade;
 
 
+import com.datalex.rest.info.service.MathService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.datalex.rest.info.exception.BadRequestException;
 import com.datalex.rest.info.model.MathDto;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -18,9 +18,9 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
-public class MathServiceManager {
+public class MathFacade {
 
-    private static final Logger LOG = LoggerFactory.getLogger(MathServiceManager.class);
+    private static final Logger LOG = LoggerFactory.getLogger(MathFacade.class);
 
     @Autowired
     private KafkaTemplate<String, MathDto> kafkaTemplate;
@@ -39,13 +39,9 @@ public class MathServiceManager {
 
     private static final AtomicInteger count = new AtomicInteger(0);
 
-    public MathDto createMath(MathDto math) throws BadRequestException  {
+    public MathDto createMath(MathDto math)   {
 
-        try {
-            mathService.calculateResult(math);
-        } catch (IllegalArgumentException illex) {
-            throw new BadRequestException(illex.getMessage());
-        }
+        mathService.calculateResult(math);
         math.setId(count.get());
         send(math);
         return math;

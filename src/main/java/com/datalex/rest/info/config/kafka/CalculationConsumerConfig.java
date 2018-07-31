@@ -1,4 +1,4 @@
-package com.datalex.rest.info.config;
+package com.datalex.rest.info.config.kafka;
 
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;

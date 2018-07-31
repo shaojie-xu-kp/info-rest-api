@@ -1,7 +1,7 @@
 package com.datalex.rest.info.resource;
 
 import com.datalex.rest.info.model.MathDto;
-import com.datalex.rest.info.service.MathServiceManager;
+import com.datalex.rest.info.facade.MathFacade;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
@@ -33,7 +33,7 @@ public class CalculationResourceTest {
     private MockMvc mockMvc;
 
     @MockBean
-    private MathServiceManager mathServiceManager;
+    private MathFacade mathFacade;
 
 
 
@@ -48,7 +48,7 @@ public class CalculationResourceTest {
 
         String inputJsonString = this.mapToJsonString(mathDto);
 
-        Mockito.when(mathServiceManager.createMath(Mockito.any(MathDto.class))).thenReturn(mathDto);
+        Mockito.when(mathFacade.createMath(Mockito.any(MathDto.class))).thenReturn(mathDto);
 
         String postURI = "/calculations";
 
@@ -77,7 +77,7 @@ public class CalculationResourceTest {
 
         String inputJsonString = this.mapToJsonString(mathDto);
 
-        Mockito.when(mathServiceManager.getMathBy(Mockito.anyInt())).thenReturn(mathDto);
+        Mockito.when(mathFacade.getMathBy(Mockito.anyInt())).thenReturn(mathDto);
 
         String getURI = "/calculations/1";
 
