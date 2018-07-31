@@ -33,6 +33,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = 1.8
 
 repositories {
+	mavenLocal()
 	mavenCentral()
 	maven { url 'https://dub-artifactory.datalex.com/artifactory/Gradle-Componentization' }
 	maven { url 'https://dub-artifactory.datalex.com/artifactory/tdp-artifacts'}
@@ -58,6 +59,9 @@ dependencies {
 	testCompile group: 'org.springframework.kafka', name: 'spring-kafka-test', version: '2.1.5.RELEASE'
 
 	testCompile('log4j:log4j:1.2.17')
+
+	// info rest schema
+	compile group: 'com.datalex.tdp.rest', name: 'info-rest-schema', version: '3.0.0-SNAPSHOT'
 
 	//tdp schemas
 	compile(group: 'com.datalex.tdp.schema', name: 'TDP_Schema_API', version: property('component.schema.TDP_Schema_API.version')) {
