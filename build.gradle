@@ -35,6 +35,7 @@ sourceCompatibility = 1.8
 repositories {
 	mavenCentral()
 	maven { url 'https://dub-artifactory.datalex.com/artifactory/Gradle-Componentization' }
+	maven { url 'https://dub-artifactory.datalex.com/artifactory/tdp-artifacts'}
 }
 
 
@@ -57,6 +58,70 @@ dependencies {
 	testCompile group: 'org.springframework.kafka', name: 'spring-kafka-test', version: '2.1.5.RELEASE'
 
 	testCompile('log4j:log4j:1.2.17')
+
+	//tdp schemas
+	compile(group: 'com.datalex.tdp.schema', name: 'TDP_Schema_API', version: property('component.schema.TDP_Schema_API.version')) {
+		//unused TDP SCHEMA
+		exclude group: 'com.datalex.tdp.schema', module: 'TDPProductXSD'
+		exclude group: 'com.datalex.tdp.schema', module: 'tdpairbookingxsd'
+		exclude group: 'com.datalex.tdp.schema', module: 'TDP_RedemptionPricingEngine_Schema'
+		exclude group: 'com.datalex.tdp.schema', module: 'packageschemas'
+		exclude group: 'com.datalex.tdp.schema', module: 'BifSchemas'
+		exclude group: 'com.datalex.tdp.schema', module: 'EANHotelV3Schema'
+		exclude group: 'com.datalex.tdp.schema', module: 'AncillaryRedemptionPriceSchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'crossSellXSD'
+		exclude group: 'com.datalex.tdp.schema', module: 'DLXBRCManageSchemas'
+		exclude group: 'com.datalex.tdp.schema', module: 'datalexcommonschemas'
+		exclude group: 'com.datalex.tdp.schema', module: 'SystemSecurityCommonSchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'tdpConnectionSchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'ORE-Schema-Internal'
+		exclude group: 'com.datalex.tdp.schema', module: 'ACEWebServicesSchemas'
+		exclude group: 'com.datalex.tdp.schema', module: 'NotificationSchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'TDPSalesJournalInternalAPI'
+		exclude group: 'com.datalex.tdp.schema', module: 'tdpHotelPriceBreakdownXMLInterfaces'
+		exclude group: 'com.datalex.tdp.schema', module: 'FareSearchSvXSD'
+		exclude group: 'com.datalex.tdp.schema', module: 'TDPSalesJournalPublicAPI'
+		exclude group: 'com.datalex.tdp.schema', module: 'tdp_connection_factory_details_schemas'
+		exclude group: 'com.datalex.tdp.schema', module: 'ORE-Schema-Public'
+		exclude group: 'com.datalex.tdp.schema', module: 'm3OtaInsuranceInterfaces'
+		exclude group: 'com.datalex.tdp.schema', module: 'tdppolicyxsd'
+		exclude group: 'com.datalex.tdp.schema', module: 'ModifiableBREObjects'
+		exclude group: 'com.datalex.tdp.schema', module: 'tdp_connection_factory_shutdown_schemas'
+		exclude group: 'com.datalex.tdp.schema', module: 'DeltaSchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'EmailServantSchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'BRCCatalogueSchemas'
+		exclude group: 'com.datalex.tdp.schema', module: 'TDPDynamicCurrencyConversionSchemas'
+		exclude group: 'com.datalex.tdp.schema', module: 'tdp_misc_charges_schemas'
+		exclude group: 'com.datalex.tdp.schema', module: 'JAXBCommonXSD'
+		exclude group: 'com.datalex.tdp.schema', module: 'rules'
+		exclude group: 'com.datalex.tdp.schema', module: 'tdpAirTaxSchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'tdpServiceOperationSchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'hertz_ota_schema'
+		exclude group: 'com.datalex.tdp.schema', module: 'TDPInventorySchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'availcacheschema'
+		exclude group: 'com.datalex.tdp.schema', module: 'CyberSourceSchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'DatasourceSchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'fare_quote_schema'
+		exclude group: 'com.datalex.tdp.schema', module: 'PromotionShoppingSchema'
+		exclude group: 'com.datalex.tdp.schema', module: 'SabreWebServicesSchemas'
+		exclude group: 'com.datalex.tdp.schema', module: 'storefrontxml'
+		exclude group: 'com.datalex.tdp.schema', module: 'tdp_air_fee_schemas'
+
+		//unused binary dependencies delivered by TDP XSD umbrella
+		exclude group: 'dlex-custom'
+		exclude module: 'mscf'
+		exclude group: 'javax.xml.bind'
+		exclude group: 'org.jvnet.jaxb2_commons'
+		exclude group: 'com.sun.xml.ws'
+		exclude group: 'com.sun.xml.stream'
+		exclude group: 'com.sun.xml.messaging.saaj'
+		exclude group: 'javax.activation'
+		exclude group: 'javax.jws'
+		exclude group: 'org.jvnet.staxex'
+		exclude group: 'com.sun.xml.bind'
+		exclude group: 'org.hamcrest'
+		exclude group: 'junit'
+	}
 
 }
 
