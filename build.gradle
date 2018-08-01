@@ -132,5 +132,12 @@ dependencies {
 		exclude group: 'junit'
 	}
 
+	// https://mvnrepository.com/artifact/org.springframework.ws/spring-ws
+	compile group: 'org.springframework.ws', name: 'spring-ws', version: '3.0.3.RELEASE', ext: 'pom'
+
+	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web-services
+	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web-services', version: '2.0.0.RELEASE'
+
+
 }
 
