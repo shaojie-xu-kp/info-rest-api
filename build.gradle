@@ -133,11 +133,16 @@ dependencies {
 	}
 
 	// https://mvnrepository.com/artifact/org.springframework.ws/spring-ws
-	compile group: 'org.springframework.ws', name: 'spring-ws', version: '3.0.3.RELEASE', ext: 'pom'
+	compile group: 'org.springframework.ws', name: 'spring-ws', version: '3.0.3.RELEASE'
 
 	// https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web-services
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web-services', version: '2.0.0.RELEASE'
 
+	// https://mvnrepository.com/artifact/org.ehcache/ehcache
+	compile group: 'org.ehcache', name: 'ehcache', version: '3.5.2'
+
+	// https://mvnrepository.com/artifact/javax.cache/cache-api
+	compile group: 'javax.cache', name: 'cache-api', version: '1.1.0'
 
 }
 
