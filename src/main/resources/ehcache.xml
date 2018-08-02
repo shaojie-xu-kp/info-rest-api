@@ -5,7 +5,7 @@
          monitoring="autodetect"
          dynamicConfig="true">
 
-    <cache name="math"
+    <cache name="mathCache"
            maxElementsInMemory="100"
            eternal="false"
            overflowToDisk="false"

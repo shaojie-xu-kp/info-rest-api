@@ -1,6 +1,7 @@
 package com.datalex.rest.info.facade;
 
 
+import com.datalex.rest.info.exception.CacheNotValidException;
 import com.datalex.rest.info.model.MathDto;
 import com.datalex.rest.info.service.MathService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import java.io.IOException;
+import java.util.Objects;
 import java.util.concurrent.atomic.AtomicInteger;
 
 @Service
@@ -36,6 +38,8 @@ public class MathFacade {
     @Autowired
     CacheManager cacheManager;
 
+    private static final String MATH_CACHE =  "mathCache";
+
     /**
      * created as a kind of database to store the calculation math result
      * the record gets inserted only when kafka topic is updated
@@ -44,7 +48,10 @@ public class MathFacade {
 
     @PostConstruct
     private void init() {
-        mathCache = cacheManager.getCache("math");
+        mathCache = cacheManager.getCache(MATH_CACHE);
+        if(Objects.isNull(mathCache)) {
+            throw new CacheNotValidException(String.format("the cache of %s is not configured, it has to be configured correctly to run the application", MATH_CACHE));
+        }
     }
 
     private static final AtomicInteger count = new AtomicInteger(0);
